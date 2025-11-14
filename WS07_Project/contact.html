@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Journal — Contact</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">NJ</span>
+        <span class="site-title">Nature Journal</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact</h1>
+    <p class="lead">Send feedback or ask a question — this form is a static demo (no backend).</p>
+
+    <form>
+      <label for="name">Name</label><br>
+      <input id="name" name="name" type="text" style="padding:8px;width:100%;max-width:480px;border-radius:6px;border:1px solid #e5e7eb;margin-top:6px"><br><br>
+
+      <label for="email">Email</label><br>
+      <input id="email" name="email" type="email" style="padding:8px;width:100%;max-width:480px;border-radius:6px;border:1px solid #e5e7eb;margin-top:6px"><br><br>
+
+      <label for="message">Message</label><br>
+      <textarea id="message" name="message" rows="5" style="padding:8px;width:100%;max-width:480px;border-radius:6px;border:1px solid #e5e7eb;margin-top:6px"></textarea><br><br>
+
+      <button class="btn" type="submit">Send</button>
+    </form>
+
+    <footer class="site-footer">
+      <p class="footer-note">Back to <a href="index.html">Home</a></p>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav-list');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    })();
+  </script>
+</body>
+</html>

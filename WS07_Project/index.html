@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nature Journal — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">NJ</span>
+        <span class="site-title">Nature Journal</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false">☰ Menu</button>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1>Nature Journal</h1>
+        <p class="lead">A small project showcasing responsive layout techniques, accessible navigation, and modern CSS. Explore mini-articles, images and tips for observing nature.</p>
+        <p class="hero-cta"><a href="about.html" class="btn">Learn more</a></p>
+
+        <div class="features">
+          <article class="card">
+            <h3>Responsive</h3>
+            <p>Layouts adapt from multi-column to single-column on mobile devices.</p>
+          </article>
+          <article class="card">
+            <h3>Lightweight</h3>
+            <p>Small, semantic HTML with a tiny CSS file for teaching purposes.</p>
+          </article>
+          <article class="card">
+            <h3>Accessible</h3>
+            <p>Keyboard-friendly navigation and clear structure for screen readers.</p>
+          </article>
+        </div>
+      </div>
+
+      <figure class="hero-figure">
+        <img src="https://images.pexels.com/photos/18065244/pexels-photo-18065244/free-photo-of-hammastynyt-porroinen-kissa.jpeg" alt="A relaxed cat in nature">
+      </figure>
+    </section>
+
+    <section style="margin-top:20px">
+      <h2>Latest Notes</h2>
+      <div class="features">
+        <div class="card"><h3>Bird Watching</h3><p>Tips for identifying local species.</p></div>
+        <div class="card"><h3>Plant ID</h3><p>Useful apps and offline guides.</p></div>
+        <div class="card"><h3>Photography</h3><p>How to get sharp macro shots without fancy gear.</p></div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p class="footer-note">Copyright 2025 • Nature Journal</p>
+    </footer>
+  </main>
+
+  <script>
+    (function(){
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav-list');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>
