@@ -1,41 +1,57 @@
             
             h1 {
-            color: rgb(16, 31, 3);
+            color: rgb(74, 147, 10);
             }
             h3 {
-            color: rgb(42, 81, 5);
+            color: rgb(203, 11, 187);
             }
             p {
-            color: rgb(9, 146, 45);
+            color: rgb(213, 5, 255);
             }
             body {
-            background-color: rgb(188, 184, 193);
+            background-color: rgb(76, 3, 61);
             }
             h1 {
             font-size: 3rem;
             }
 
             .content-box {
-            padding: 20px;
-            margin: 10px;
-            background-color: #e3e3e3;
+            padding: 5px;
+            margin: 50px;
+            background-color: #8a0778;
             border: 1px solid #520505;
             }
 
             
             table {
-      width: 100%;
-      border-collapse: collapse;
-    }
+            width: 50%;
+            border-collapse: collapse;
+            margin: 0 0 25px 55px;
+            }
     
+.transition-button {
+        background-color: rgb(74, 7, 56);
+        padding: 5px 15px;
+        border: none;
+        cursor: pointer;
+        margin: 0 0 10px 65px;
+        border: 1px solid #be0ca4;
+      }
+      
+      .transition-button:hover {
+        background-color: rgb(248, 0, 207);
+      }
+
+
+
     th, td {
-      border: 1px solid #ddd;
+      border: 1px solid #aa0491;
       padding: 8px;
       text-align: left;
     }
     
     th {
-      background-color: #f2f2f2;
+      background-color: #841c77;
     }
     
     form {
@@ -50,13 +66,13 @@
     
     input[type="text"], input[type="email"] {
       padding: 8px;
-      border: 1px solid #ddd;
+      border: 1px solid #d602e9;
       border-radius: 4px;
     }
     
     input[type="submit"] {
-      background-color: #4CAF50;
-      color: white;
+      background-color: #9b0450;
+      color: rgb(0, 0, 0);
       padding: 10px;
       border: none;
       border-radius: 4px;
