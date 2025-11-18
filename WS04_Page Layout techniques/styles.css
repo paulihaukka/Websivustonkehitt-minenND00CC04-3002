@@ -1,80 +1,68 @@
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 20px;
-  background: #f7f7f7;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
-
-header, main, footer {
-  margin-bottom: 20px;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 12px;
-}
-nav a {
-  text-decoration: none;
-  color: #2c3e50;
-  padding: 6px 10px;
-  border-radius: 4px;
-}
-nav a:hover { background: #ecf0f1; }
+    margin: 20px;
+    background-color: #4b0847
+  }
 
 .flex-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 12px;
-  margin: 12px 0;
-}
-.box {
-  background-color: lightblue;
-  padding: 20px;
-  text-align: center;
-  flex: 1 1 0;
-  border-radius: 4px;
-}
+    margin: 0 0 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .box {
+    background-color: rgb(158, 19, 89);
+    padding: 20px;
+    text-align: center;
+  }
+
+
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  margin: 12px 0;
-}
-.grid-item {
-  background-color: lightgreen;
-  padding: 20px;
-  text-align: center;
-  border-radius: 4px;
-}
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 0 0 40px 0;
+  }
+  
+  .grid-item {
+    background-color: rgb(252, 2, 139);
+    padding: 20px;
+    text-align: center;
+  }
+
 
 .responsive-box {
-  padding: 20px;
-  text-align: center;
-  color: white;
-  border-radius: 4px;
-}
-@media (max-width: 600px) {
-  .responsive-box { background-color: lightcoral; }
-  .grid-container { grid-template-columns: 1fr; }
-  .flex-container { flex-direction: column; }
-}
-@media (min-width: 601px) {
-  .responsive-box { background-color: lightseagreen; }
-}
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 2000px) {
+    .responsive-box {
+      background-color: rgb(105, 6, 72);
+    }
+  }
+  
+  @media (min-width: 2001px) {
+    .responsive-box {
+      background-color: rgb(253, 3, 191);
+    }
+  }
 
-h2 { margin-top: 0; }
-.footer-note { font-size: 0.9em; color: #666; }
+   @media (max-width: 1800px) {
+    .responsive-box {
+      background-color: rgb(253, 3, 191);
+    }
+  }
+
+h1 {
+    color: rgb(185, 16, 236);
+            }
+    
+p {
+    color: rgb(158, 6, 189);
+            }
+
+h2 {
+    color: rgb(201, 71, 179);
+            }
