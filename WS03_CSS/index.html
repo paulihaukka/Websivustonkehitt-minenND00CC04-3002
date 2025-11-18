@@ -3,9 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WS03_CSS</title>
+    <title>My First HTML Page</title>
+    
+
+    <link rel="stylesheet" href="styles.css">
+    
+
+    <style>
+        .special-text {
+            color: #e74c3c;
+            font-style: italic;
+        }
+        
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>WS03_CSS</h1>
+    <div class="container">
+    <h1 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.2);">this is my inters neet sit e</h1>
+    <p class="special-text">I'm this cat</p>
+    <img src="https://images.pexels.com/photos/18065244/pexels-photo-18065244/free-photo-of-hammastynyt-porroinen-kissa.jpeg" alt="kuva kissasta" style="width:300px; height:auto; margin: 20px 0;">
+
+    <h2>my hobb t s</h2>
+    <ul>
+        <li>opiskelu</li>
+        <li>pelaa minen</li>
+        <li>sali</li>
+
+
+    </ul>
+
+    <h2>favor ite si tt e</h2>
+    <p>
+        <a href="https://www.discord.com">dicsord</a>
+    </p>
+
+    <h2>My Current Courses</h2>
+    <table border="1">
+        <tr>
+            <th>Course Name</th>
+            <th>Credits</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>5</td>
+            <td>In Progress</td>
+        </tr>
+        <tr>
+            <td>Database Management</td>
+            <td>5</td>
+            <td>Planned</td>
+        </tr>
+        <tr>
+            <td>User Interface Design</td>
+            <td>5</td>
+            <td>Planned</td>
+        </tr>
+    </table>
+
+    <h2>Contact Form</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <section class="demo-section">
+        <h2>Task 1: Transition Button</h2>
+        <div class="demo-row">
+            <button class="transition-button">Hover me</button>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <h2>Task 2: Animation Box</h2>
+        <div class="demo-row">
+            <div class="animation-box" aria-hidden="true"></div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <h2>Task 3: Pseudo-class List</h2>
+        <ul class="pseudo-list">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </section>
+
+    <section class="demo-section">
+        <h2>Task 4: Filtered Image</h2>
+        <img class="filter-image" src="https://images.pexels.com/photos/18065244/pexels-photo-18065244/free-photo-of-hammastynyt-porroinen-kissa.jpeg" alt="sample cat image">
+    </section>
+
+    <section class="demo-section">
+        <h2>Task 5: Decorative Blockquote</h2>
+        <blockquote class="quote">This is a sample quote demonstrating pseudo-elements for decorative marks.</blockquote>
+    </section>
+
+    <p><a href="#top">Back to Top</a></p>
+    </div>
 </body>
 </html>
