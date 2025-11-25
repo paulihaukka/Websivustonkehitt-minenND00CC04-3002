@@ -1,51 +1,43 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fi">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Responsive Design Examples</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Responsive demo</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Responsive Design Examples</h1>
-      <nav class="responsive-nav">
-        <button class="menu-toggle" aria-expanded="false">☰ Menu</button>
-        <ul class="nav-list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#examples">Examples</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <header>
+    <nav class="responsive-nav" aria-label="Main">
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"> Menu</button>
+      <ul id="main-nav" class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-      <section id="examples">
-        <h2>Responsive Two-Column Layout</h2>
-        <div class="responsive-container">
-          <div class="column">Column 1<br>Some content here.</div>
-          <div class="column">Column 2<br>More content here.</div>
-        </div>
+  <main class="container">
+    <section id="examples" class="examples">
+      <h1>interneettisivu</h1>
+      <div class="responsive-container">
+        <div class="column">sarake 1<br>Esimerkkisisältöä.</div>
+        <div class="column">sarake 2<br>Lisää sisältöä.</div>
+      </div>
 
-        <h2>Responsive Image</h2>
-        <img class="responsive-image" src="https://images.pexels.com/photos/18065244/pexels-photo-18065244/free-photo-of-hammastynyt-porroinen-kissa.jpeg" alt="Responsive Image">
+      <h2>kuva</h2>
+      <img class="responsive-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwCncpt_efvK19ELMoQ_LxAHc9Y8Q3_OXv0A&s" alt="Responsive Image">
 
-        <h2>Media Query Box</h2>
-        <div class="media-query-box">Resize the window to see the effect</div>
-      </section>
-    </main>
-
-    <footer>
-      <p class="footer-note">Demo — Responsive layout and navigation (2025)</p>
-    </footer>
-  </div>
+      <div class="media-query-box">Resize the window to see the effect</div>
+    </section>
+  </main>
 
   <script>
 
-    (function() {
+    (function(){
       const toggle = document.querySelector('.menu-toggle');
-      const navList = document.querySelector('.responsive-nav .nav-list');
+      const navList = document.getElementById('main-nav');
       if (!toggle || !navList) return;
       toggle.addEventListener('click', () => {
         const isOpen = navList.classList.toggle('open');
