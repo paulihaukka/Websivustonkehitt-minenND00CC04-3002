@@ -1,1 +1,103 @@
-﻿
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap-työpajan esimerkit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Task 3: Responsive Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bootstrap-kokeilu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Näytä/piilota navigaatio">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Koti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#grid">Ruudukko / napit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#card">Kortti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#alerts">Ilmoitukset</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <header class="mb-4">
+        <h1 class="display-6">Bootstrap-työpajan perusteet</h1>
+        <p class="lead">Esimerkit: ruudukko, napit, navigaatiopalkki, kortti, ilmoitukset.</p>
+      </header>
+
+      <!-- Task 1: Grid Layout -->
+      <section id="grid" class="mb-5">
+        <h2>Tehtävä 1: Bootstrap-ruudukko</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12 mb-3">
+              <div class="p-3 border rounded grid-col-1">Sarake 1</div>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+              <div class="p-3 border rounded grid-col-2">Sarake 2</div>
+            </div>
+            <div class="col-md-4 col-12 mb-3">
+              <div class="p-3 border rounded grid-col-3">Sarake 3</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Task 2: Button -->
+      <section class="mb-5">
+        <h2>Tehtävä 2: Napit</h2>
+        <p>
+          <button class="btn btn-primary me-2">Ensisijainen</button>
+          <button class="btn btn-secondary me-2">Toissijainen</button>
+          <button class="btn btn-success">Onnistunut</button>
+        </p>
+      </section>
+
+      <!-- Task 4: Card -->
+      <section id="card" class="mb-5">
+        <h2>Tehtävä 4: Kortti</h2>
+        <div class="card" style="max-width: 18rem;">
+          <img src="https://images.pexels.com/photos/18065244/pexels-photo-18065244/free-photo-of-hammastynyt-porroinen-kissa.jpeg" class="card-img-top" alt="Kortin kuva">
+          <div class="card-body">
+            <h5 class="card-title">Kortin otsikko</h5>
+            <p class="card-text">Tämä on yksinkertainen korttiesimerkki Bootstrapilla.</p>
+            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="btn btn-primary">Lue lisää</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Task 5: Alert -->
+      <section id="alerts" class="mb-5">
+        <h2>Tehtävä 5: Ilmoitukset</h2>
+        <div class="alert alert-warning" role="alert">
+          Tämä on varoitusilmoitus.
+        </div>
+        <div class="alert alert-success" role="alert">
+          Tämä on onnistumisilmoitus. Kaikki kunnossa!
+        </div>
+      </section>
+
+      <footer class="mt-5">
+        <p class="text-muted">Bootstrap-perusteiden demo valmis.</p>
+      </footer>
+    </main>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
