@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oravat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+        background-image: url('https://s3.animalia.bio/animals/photos/full/original/jad3y0nNjI8ge1DZv8fQ.webp');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Task 3: Responsive Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Koti</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tietoa.html">Tietoa oravista</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tylsät
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="otayhteytta.html">Ota yhteyttä</a></li>
+            <li><a class="dropdown-item" href="lahteet.html">Lähteet</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <main class="container my-5">
+      <header class="mb-4">
+        <h1 class="display-6">Interneettisivusto oravista</h1>
+      </header>
+
+      <section class="info-box">
+        <h2>Tämä sivusto</h2>
+        <p>Tämä sivusto on kurssin päättöytyö, ja se kertoo oravista.</p>
+
+        <div id="infoCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width:420px;">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://pixnio.com/free-images/2017/03/11/2017-03-11-09-00-08-576x576.jpg" class="d-block w-100 rounded" alt="Orava 1">
+            </div>
+            <div class="carousel-item">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmfto61qlFxGfCNEF3dfViLTOznHuj-EwO6A&s" class="d-block w-100 rounded" alt="Orava 2">
+            </div>
+            <div class="carousel-item">
+              <img src="https://s3.animalia.bio/animals/photos/full/original/1196px-wiki-ezomomonga1jpg.webp" class="d-block w-100 rounded" alt="Orava 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#infoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Edellinen</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#infoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Seuraava</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!-- Bootstrap JS bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

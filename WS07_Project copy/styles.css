@@ -1,0 +1,24 @@
+/* Custom grid column colors */
+
+.grid-col-1 {
+  background-color: #e3f2fd;  /* Light blue */
+}
+
+.grid-col-2 {
+  background-color: #f3e5f5;  /* Light purple */
+}
+
+.grid-col-3 {
+  background-color: #e8f5e9;  /* Light green */
+}
+
+/* Optional: Add hover effect */
+.grid-col-1:hover,
+.grid-col-2:hover,
+.grid-col-3:hover {
+  opacity: 0.8;
+  transition: opacity 0.1s ease;
+}
+
+
+
