@@ -208,3 +208,51 @@ body.dark-bg a:hover {
     100% { transform: translate(0, 0); }
 }
 
+/* Taulukon ulkoasu */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Taulukon otsikkorivi */
+.table thead th {
+  background: linear-gradient(135deg, #ff8c42, #ff5f5f);
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 14px;
+}
+
+/* Taulukon solukkeet */
+.table td {
+  padding: 14px 16px;
+  vertical-align: middle;
+}
+
+/* Hover-efekti riveille */
+.table tbody tr:hover {
+  background-color: rgba(255, 140, 66, 0.15);
+  transition: 0.2s;
+}
+
+/* Reunan pehmennys */
+.table-bordered > :not(caption) > * > * {
+  border: 1px solid #ddd;
+}
+
+/* Lisää tilaa taulukoiden väliin */
+.container.my-5 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 3.5rem !important;
+}
+
+/* Otsikoiden ulkoasu */
+.container h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #ff5f5f;
+}
