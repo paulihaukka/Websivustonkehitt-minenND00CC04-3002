@@ -168,7 +168,43 @@ body.dark-bg a:hover {
 }
 
 
-.table table-bordered th,
-body.dark-bg .table table-bordered td {
-  border: 1px solid #ca1919 !important;
+
+
+.infobox {
+    background-color: #292826;  /* tumma ruskea */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    margin: 20px auto;          /* 20px marginaali ylhäällä/alhaalla ja keskitys vaakasuunnassa */
+    max-width: 600px;           /* maksimileveys, voit säätää */
 }
+
+.infobox h2 {
+    margin-top: 0;
+}
+
+.infobox ul {
+    padding-left: 20px;
+}
+
+.infobox li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.orava {
+    display: inline-block;
+    animation: pomppu 1s infinite alternate;
+}
+
+/* Animaatio, joka vuorottelee vasen/oikea */
+@keyframes pomppu {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(-10px, -15px); }
+    50% { transform: translate(0, 0); }
+    75% { transform: translate(10px, -15px); }
+    100% { transform: translate(0, 0); }
+}
+
